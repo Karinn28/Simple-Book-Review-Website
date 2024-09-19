@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+
+h2, h3 {
+    color: #A13333;
+}
+
+footer {
+    padding: 20px;
+    color: #B3541E;
+    background-color: #461111;
+    text-align: center;
+    font-weight: bold;
+}
+
+footer .social-media {
+    margin-top: 10px;
+}
+
+footer ul {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer ul li a i {
+    color: #B3541E; 
+    text-decoration: none;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+footer ul li a:hover i {
+    color: #ffffff;
+}
+
+nav ul {
+    padding-inline: 4rem;
+    display: flex;
+    gap: 2rem;
+    list-style-type: none;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #B3541E;
+    transition: background 0.3s ease;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+nav {
+    background-color: #461111;
+    padding: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav.sticky {
+    position: fixed; /* Fixes the nav to the top of the viewport when scrolling */
+    top: 0; /* Positions it at the very top */
+    width: 100%; /* Makes the nav span the full width of the viewport */
+    opacity: 0.8; /* Makes the nav slightly transparent */
+    z-index: 10; /* Ensures it appears above other elements */
+}
+
+.jumbotron {
+    position: relative;
+    font-size: 20px;
+    padding: 60px;
+    background-image: url(image/header-background.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #B3541E;
+}
+
+.jumbotron::after {
+    content: ''; /* Creates a pseudo-element for the overlay */
+    position: absolute; /* Positions it absolutely within the jumbotron */
+    top: 0; left: 0; right: 0; bottom: 0; /* Covers the entire jumbotron area */
+    background-color: rgba(0, 0, 0, 0.75); /* Semi-transparent black overlay for readability */
+    z-index: 1; /* Places it above the background image */
+}
+
+.jumbotron h1 {
+    position: relative;
+    z-index: 2;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#content {
+    display: flex; /* Enables flexbox layout */
+    gap: 0; /* No space between flex items */
+}
+
+.synopsis {
+    flex: 2;
+    min-width: 300px;
+}
+
+aside {
+    flex: 0 0 300px;
+    align-self: flex-start; 
+}
+
+
+.auth.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    width: 100%;
+    max-width: none;
+}
+
+.review {
+    flex: 1;
+    min-width: 300px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin: 0;
+}
+
+.auth header {
+    text-align: center;
+}
+
+.auth img {
+    width: 200px;
+}
+
+/* Responsive Layouts */
+@media screen and (max-width: 1200px) {
+    main {
+        flex-direction: column;
+    }
+
+    #content {
+        flex-direction: row;
+        align-items: flex-start;
+        /* width: 100%;
+        margin: 0; */
+    }
+
+    aside {
+        align-self: flex-start;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        justify-content: center;
+    }
+
+    aside {
+        align-self: flex-start;
+    }
+}

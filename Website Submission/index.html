@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width", initial-scale="1.0" />
+    <title>BOOK REVIEW</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<link rel="stylesheet" href="style.css">
+</head>
+	
+<body>
+	<header>
+		<div class="jumbotron">
+            <h1>Book Review:<br> BABEL, or the Necessity of Violence</h1>
+	    </div>
+
+	    <nav>
+	    <ul>
+		    <li><a href="#synopsis">Synopsis</a></li>
+            <li><a href="#review">Review</a></li>
+            <li><a href="#contact">My Contact</a></li>
+	    </ul>
+	    </nav>
+	</header>
+
+	<main>
+        <div id="content">	
+	        <article id="synopsis" class="card synopsis">
+    
+                <h2>Synopsis</h2>
+                <p>1828. Robin Swift, orphaned by cholera in Canton, is brought to London by the mysterious Professor Lovell. There, he trains for years in Latin, Ancient Greek, and Chinese, all in preparation for the day he'll enroll in Oxford University's prestigious Royal Institute of Translation — also known as Babel. Babel is the world's center of translation and, more importantly, of silver-working: the art of manifesting the meaning lost in translation through enchanted silver bars, to magical effect. Silver-working has made the British Empire unparalleled in power, and Babel's research in foreign languages serves the Empire's quest to colonize everything it encounters.</p>
+                <p>Oxford, the city of dreaming spires, is a fairytale for Robin; a utopia dedicated to the pursuit of knowledge. But knowledge serves power, and for Robin, a Chinese boy raised in Britain, serving Babel inevitably means betraying his motherland. As his studies progress, Robin finds himself caught between Babel and the shadowy Hermes Society, an organization dedicated to sabotaging the silver-working that supports imperial expansion. When Britain pursues an unjust war with China over silver and opium, Robin must decide: Can powerful institutions be changed from within, or does revolution always require violence? What is he willing to sacrifice to bring Babel down?</p>
+	        </article>
+
+            <aside>
+		        <article id="about" class="auth card">
+		        <header>
+			        <h2>Author Profile</h2>
+                        <figure>
+                        <img src="image/R.F Kuang.jpg" alt="R.F. Kuang Photo" />
+                        <figcaption>R.F. Kuang</figcaption>
+                        </figure>
+		        </header>
+                <section>
+                    <h3>Fun Fact</h3>
+                    <p>She wrote "Babel" while simultaneously pursuing her graduate studies at Cambridge University! The novel reflects her deep interest in linguistics and the complexities of language, drawing on her own academic background. This unique blend of scholarship and storytelling makes "Babel" not only an engaging fantasy but also a thoughtful commentary on colonialism and the power of words.</p>
+                </section>
+                </article>
+	        </aside>
+        </div>
+
+        <div>
+	        <article id="review" class="card review">
+                <h2>Review of "Babel" by R.F. Kuang</h2>
+                <p>R.F. Kuang’s "Babel" is a mesmerizing blend of fantasy, history, and linguistic exploration, set in a richly imagined alternate 19th-century England. The novel follows the journey of Robin Swift, a young Chinese scholar who is brought to the prestigious Babel Institute in Oxford. There, he discovers that translation is not just an academic exercise but a powerful tool of magic that can reshape reality.</p>
+                <p>One of the standout elements of "Babel" is its deep dive into the themes of colonialism, language, and identity. Kuang deftly critiques the imperialist undertones of academia, showing how language can both empower and oppress. The interplay between translation and power dynamics is particularly compelling, as Robin grapples with his role in a system that exploits his heritage while claiming to elevate it.</p>
+                <p>The characters are richly developed, each with their own struggles and motivations. Robin’s internal conflict about his identity and his relationship with his friends adds an emotional depth that resonates throughout the narrative. The diverse cast not only highlights the complexities of colonialism but also emphasizes the importance of solidarity among marginalized voices.</p>
+                <p>Kuang's writing is both lyrical and incisive, with vivid descriptions that bring the world to life. The magical elements are intricately woven into the plot, creating a captivating atmosphere that keeps readers engaged. The pacing is well-balanced, with moments of tension and introspection that draw you further into Robin’s world.</p>
+                <p>"Babel" also excels in its exploration of the moral dilemmas surrounding power and complicity. As Robin navigates his way through the challenges posed by the institute, readers are prompted to reflect on the broader implications of knowledge and the responsibilities that come with it.</p>
+                <p>In conclusion, "Babel" is a thought-provoking and beautifully crafted novel that challenges readers to reconsider the intersections of language, power, and identity. R.F. Kuang has created a masterful work that is both enchanting and deeply relevant, making it a must-read for fans of speculative fiction and historical narratives alike.</p>
+	        </article>
+        </div>
+	</main>
+
+	<footer id="contact">
+        <div class="social-media"></div>
+            <ul>
+                <li><a href="https://www.instagram.com/kenayas_?igsh=YjBnb2xpcGRjemM3"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/karina-erlayas-ba79a3269"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+        </div>
+        <p>Book Reviewers, Dicoding Web Submission</p>
+    </footer>
+</body>
+
+<script>
+    // JavaScript to handle sticky navigation
+    window.onscroll = function() {
+        const nav = document.querySelector('nav'); // Select the nav element
+        const jumbotron = document.querySelector('.jumbotron'); // Select the jumbotron element
+        const sticky = jumbotron.offsetHeight; // Get the height of the jumbotron
+
+        // Add or remove the 'sticky' class based on scroll position
+        if (window.pageYOffset > sticky) {
+            nav.classList.add('sticky');
+        } else {
+            nav.classList.remove('sticky');
+        }
+    };
+</script>
+
+</html>
